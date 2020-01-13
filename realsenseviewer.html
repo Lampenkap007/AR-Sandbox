@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Realsenseviewer</title>
+</head>
+<body>
+    <!-- Div waar de image staat -->
+    <div class="reveal">
+        <img src="screenshots/DepthImage.png" class="imgFeed" alt="Realsenseviewer">
+    </div>
+    
+</body>
+<style>
+    .imgFeed{
+    height: 100vh;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    margin-left: -13%;
+    transform: scale(1.35);
+}
+body{
+    background-image: "screenshots/DepthImage.png";
+    overflow: hidden;
+    background-color: black;
+}
+
+.reveal:after {
+    content:" ";
+    transition: all 2s ease;
+}
+
+.reveal.show:after {
+    left:100%
+}
+</style>
+</html>

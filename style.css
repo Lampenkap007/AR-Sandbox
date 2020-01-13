@@ -1,0 +1,226 @@
+.imgFeed{
+    height: 100vh;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    margin-left: -8%;
+    transform: scale(1.3);
+}
+body{
+    font-family: 'Comfortaa', cursive;
+/* kleurtjes achtergrond */
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    background: linear-gradient(225deg, #ffabab, #ffdaab, #ddffab, #abe4ff, #d9abff);
+    background-size: 300% 300%;
+    box-sizing: border-box;
+    display: table;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    -webkit-animation: Rainbow 25s ease infinite;
+    -moz-animation: Rainbow 25s ease infinite;
+    animation: Rainbow 25s ease infinite;
+}
+
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgb(185, 185, 185);
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: rgb(185, 185, 185);
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+/* css rules per slide van de slideshow */
+  .screen1{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      font-size: 50px;
+      height: 100vh;
+      width: 100vw;
+      text-align: center;
+  }
+  .screen2{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
+
+      font-size: 50px;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.BuildSetup{
+    position: absolute;
+
+}
+
+
+.screen3{
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.subtitle{
+    margin-top: 200px;
+    position: absolute;
+}
+
+.screen4{
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+/* button op slide 4 */
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+/* code voor de button animaties enzo */
+button {
+  display: inline-block;
+  position: absolute;
+  margin-top: 800px;
+  height: 70px;
+  padding: 20px 38px;
+  top: 0;
+  font-size: 30px;
+  font-family: "Open Sans", Helvetica;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba( 28, 227, 125, 0.5 );
+  background: rgba( 22, 230, 137, 1 );
+  color: #fff;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+  
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+          transform: translateZ(0);
+  
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+button:hover {
+  top: -10px;
+  box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+  
+  -webkit-transform: rotateX(20deg);
+     -moz-transform: rotateX(20deg);
+      -ms-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+}
+
+button:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+  background: rgba( 20, 224, 133, 1 );
+}
+
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+  
+  @-webkit-keyframes Rainbow {
+    0% {
+      background-position: 94% 0%; }
+    50% {
+      background-position: 7% 100%; }
+    100% {
+      background-position: 94% 0%; } }
