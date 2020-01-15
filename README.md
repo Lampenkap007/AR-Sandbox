@@ -1,7 +1,7 @@
 # AR-Sandbox
 Dit project zorgt dat het beeld van Intel RealSense in een webpagina wordt gezet.
 
-##gebruik
+## gebruik
 Gebruik twee monitoren, 1 voor Intel RealSense viewer en de andere voor de webpagina.
 
 Open het geheel in een liveserver die refresht wanneer er wijzigingen zijn in de map.
